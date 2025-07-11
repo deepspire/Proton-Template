@@ -1,0 +1,3 @@
+[submodule "ext/Proton2D"]
+	path = ext/Proton2D
+	url = https://github.com/Deepspire/Proton2D
