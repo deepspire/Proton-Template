@@ -3,9 +3,7 @@
 #include <windows.h>
 #endif
 
-#include "menu.hh"
 #include "proton/proton.hh"
-#include "ss.hh"
 
 
 int main([[maybe_unused]] int argc, [[maybe_unused]] char **argv)
@@ -15,10 +13,7 @@ int main([[maybe_unused]] int argc, [[maybe_unused]] char **argv)
     SetConsoleCP(CP_UTF8);
 #endif
 
-    Proton::Display display("Proton2D test application", 600, 500);
-    display.setIcon("kachan.png");
-    display.setScene(new Menu(display.getRenderer(), display.getNativeWindow()));
-    // display.setRenderScale(2, 2);
+    Proton::Display display("Proton2D Template", 600, 500);
     display.startRendering();
     return 0;
 }
